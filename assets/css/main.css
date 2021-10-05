@@ -1,6 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -84,9 +83,8 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
 	}
@@ -103,7 +101,7 @@ input, select, textarea {
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -111,9 +109,9 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;
+		font-family:"RBNo2.1b W00 Black" !important;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -127,7 +125,6 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2em;
-		letter-spacing: -1px;
 	}
 
 		h2.alt {
@@ -155,8 +152,8 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
 		color: #666;
+		font-weight: 700;
 	}
 
 	em, i {
@@ -1755,14 +1752,14 @@ input, select, textarea {
 		}
 
 		.image.avatar48 {
-			width: 140px;
-			height: 140px;
+			width: 48px;
+			height: 48px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 140px;
-				height: 140px;
+				width: 48px;
+				height: 48px;
 			}
 
 		.image.fit {
@@ -1826,12 +1823,26 @@ input, select, textarea {
 
 		ul.icons a {
 			display: inline-block;
-			width: 2em;
 			height: 2em;
 			line-height: 2em;
 			text-align: center;
 			border: 0;
 		}
+
+		ul.icons .icon:before {
+			padding: 0 5px;
+		}
+
+	.resumeButton {
+		background: #ff00ff;
+		border-radius: 5px;
+		padding: 0 10px 0 5px;
+	}
+
+	.resumeButton:hover {
+		background: #00ffff;
+	}
+
 
 /* Form */
 
@@ -1923,7 +1934,7 @@ input, select, textarea {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background: #222729 url("images/overlay.png");
+			background: #222729;
 		}
 
 		table thead {
@@ -1948,13 +1959,9 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #ff00ff;
 		border: 0;
 		cursor: pointer;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
 		-moz-transition: background-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
@@ -1966,7 +1973,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: rgba(255, 0, 255, 0.75);
 		}
 
 		input[type="button"]:active,
@@ -2046,8 +2053,10 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: url("images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
+		background-size: cover;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+		text-shadow: 1px 1px 2px rgba(255, 0, 255, 1);
 		color: #fff;
 		height: 100%;
 		left: 0;
@@ -2083,11 +2092,11 @@ input, select, textarea {
 		}
 
 			#header .icons a {
-				color: #41484c;
-				-moz-transition: color 0.35s ease-in-out;
-				-webkit-transition: color 0.35s ease-in-out;
-				-ms-transition: color 0.35s ease-in-out;
-				transition: color 0.35s ease-in-out;
+				color: #00ffff;
+				-moz-transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+				-ms-transition: all 0.5s;
+				transition: all 0.5s;
 			}
 
 				#header .icons a:hover {
@@ -2096,33 +2105,42 @@ input, select, textarea {
 
 	#logo {
 		position: relative;
+		text-align: center;
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
 
+	#logo img {
+		width: 100%;
+		height: auto;
+	}
+
 		#logo h1 {
 			position: relative;
 			color: #fff;
-			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
+			font-size: 1.5em;
 		}
 
 		#logo p {
 			position: relative;
 			display: block;
-			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.8em;
+			font-weight: 700;
+			color: white;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
 
 		#logo .image {
-			/* position: absolute; */
+			position: absolute;
 			left: 0;
 			top: 0;
 		}
+
+	#nav {
+		font-family: "RBNo2.1b W00 Black";
+	}
 
 	#nav ul {
 		list-style: none;
@@ -2131,45 +2149,54 @@ input, select, textarea {
 	}
 
 		#nav ul li {
-			padding-left: 0;
+			padding: 0 0 10px;
 		}
 
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255, 255, 255, 0.5);
+				color: white;
+				font-size: 1.1em;
 				text-decoration: none;
 				outline: 0;
+				background: rgba(255, 0, 255, 0.5);
 				border: 0;
 				-moz-transition: none;
 				-webkit-transition: none;
 				-ms-transition: none;
-				transition: none;
+				transition: 0.5s;
+			}
+
+			#nav ul li a:hover {
+				background: rgba(255, 0, 255);
 			}
 
 				#nav ul li a span {
 					position: relative;
 					display: block;
-					font-size: 0.8em;
+					font-size: 1em;
 				}
 
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						color: #00ffff;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
 					}
 
 				#nav ul li a.active {
-					background: rgba(0, 0, 0, 0.15);
-					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+					background: rgba(0, 255, 255, 0.5);
 					color: #fff;
 				}
 
+				#nav ul li a.active:hover {
+					background: rgba(0, 255, 255);
+				}
+
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #ff00ff;
 					}
 
 /* Footer */
@@ -2214,12 +2241,12 @@ input, select, textarea {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			background-size: cover;
 		}
 
 			#main > section.dark {
 				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #fff;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2247,20 +2274,19 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("images/gradient.jpg");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #fff;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #fff;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #fff;
 			}
 
 /* Wide */
@@ -2325,9 +2351,8 @@ input, select, textarea {
 
 		/* Icons */
 
-			ul.icons li a {
-				width: 1.75em;
-			}
+			/* ul.icons li a {
+			} */
 
 		/* Item */
 
@@ -2411,7 +2436,6 @@ input, select, textarea {
 		/* Icons */
 
 			ul.icons a {
-				width: 1.75em;
 				font-size: 1.25em;
 			}
 
@@ -2440,7 +2464,8 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: url("images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
+				background-size: cover;
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2587,7 +2612,6 @@ input, select, textarea {
 
 			h2 {
 				font-size: 1.5em;
-				letter-spacing: 0;
 				font-weight: 300;
 			}
 
@@ -2598,7 +2622,6 @@ input, select, textarea {
 		/* List */
 
 			ul.icons a {
-				width: 2em;
 				font-size: 1.25em;
 			}
 
