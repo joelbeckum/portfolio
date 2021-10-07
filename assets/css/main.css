@@ -2053,7 +2053,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: url("images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
+		background: url("/images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
 		background-size: cover;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		text-shadow: 1px 1px 2px rgba(255, 0, 255, 1);
@@ -2274,7 +2274,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-image: url("images/gradient.jpg");
+				background-image: url("/images/gradient.jpg");
 			}
 
 			#main > section.two {
@@ -2287,11 +2287,16 @@ input, select, textarea {
 			}
 
 			.three-monogram {
-				width: 540px;
+				width: 500px;
 				max-width: 100%;
-				height: 415px;
+				height: auto;
 				float: left;
+				margin-right: 50px;
 				shape-outside: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+			}
+
+			.three-monogram img {
+				max-width: 100%;
 			}
 
 			.three h2 {
@@ -2477,7 +2482,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: url("images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
+				background: url("/images/Joel-Beckum_Synth-Brand_Background-Vertical.jpg");
 				background-size: cover;
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
@@ -2616,7 +2621,11 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
-
+		.three-monogram {
+			float: none;
+			margin: 0 auto;
+			shape-outside: none !important;
+		}
 		/* Basic */
 
 			body, input, textarea, select {
